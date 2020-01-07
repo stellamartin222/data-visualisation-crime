@@ -1,0 +1,17 @@
+header {
+  text-align: center;
+  color: rgb(49, 49, 49);
+  font-size: 2em;
+  text-decoration: underline rgb(49, 49, 49);
+}
+
+li {
+  text-align: center;
+  background-color: rgb(49, 49, 49);
+  color: aliceblue;
+}
+
+.Dropdown {
+  margin: 0 auto;
+  display: block;
+}
