@@ -54,4 +54,3 @@ export default class RadarExample extends React.Component{
   }
 };
 
-// module.exports = {refFunc}
