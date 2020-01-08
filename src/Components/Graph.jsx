@@ -37,7 +37,8 @@ export default class RadarExample extends React.Component{
                     pointBorderColor: '#fff',
                     pointHoverBackgroundColor: '#fff',
                     pointHoverBorderColor: 'rgba(179,181,198,1)',
-                    data: Object.values(refFunc(this.crimeData))
+                    data: Object.values(refFunc(this.crimeData)),
+                    
                 }
             ]
         }
@@ -45,9 +46,8 @@ export default class RadarExample extends React.Component{
     
     
     render() {
-    console.log(Object.keys(refFunc(this.crimeData)))
     return (
-      <div>
+      <div class="graphbox">
         <Radar data={this.state.data} />
       </div>
     );

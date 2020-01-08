@@ -12,16 +12,25 @@ export default function CrimeList({data}) {
         }
     })
 
+    function handleClick (category) {
+        console.log(category)
+        console.log(data)
+        const result = data.filter(data => data.category === category)
+        console.log(result)
+        return data.filter(data => data.category === category)
+    } 
+
         return (
-            <div>
+
+            <div class="flex-container">
                  <DropdownButton id="dropdown-basic-button" title="Sort by">
                     {arr.map((category) => {
-                        return <Dropdown.Item>{category}</Dropdown.Item>
+                        return <Dropdown.Item onClick={() => {handleClick(category)}}>{category}</Dropdown.Item>
                         })
                     }
                 </DropdownButton>
 
-                <CrimeCard data={data} />
+                <CrimeCard data={data}/>
             </div>
         )
     }

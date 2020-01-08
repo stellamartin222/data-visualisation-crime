@@ -1,3 +1,7 @@
+body {
+  background-color: #BFC0C0;
+}
+
 header {
   text-align: center;
   color: rgb(49, 49, 49);
@@ -7,11 +11,22 @@ header {
 
 li {
   text-align: center;
-  background-color: rgb(49, 49, 49);
+  background-color: #2B3A67;
   color: aliceblue;
 }
 
 .Dropdown {
   margin: 0 auto;
   display: block;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.graphbox {
+  margin-bottom: underline rgb(49, 49, 49) 1em;
+  margin-bottom: 25px;
 }

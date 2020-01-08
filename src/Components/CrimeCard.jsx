@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function CrimeCard({data}) {
-    console.log(data)
     return (
         <ul>
             {data.map((crime) => {
